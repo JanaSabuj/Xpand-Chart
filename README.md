@@ -1,11 +1,12 @@
 ![Xelpmoc](https://www.ipocentral.in/wp-content/uploads/2019/01/Xelpmoc-IPO.jpg)
-
 ***
-
 # Xpand-Chart
 The Data Visualizer built during my internship at Xelpmoc Design and Tech using Angular and D3.js
 
-# Xelpmoc
+# Gitlab
+This project was built and configured from scratch in Gitlab. The history can be found here: https://gitlab.datasutram.com/csv-visualization/xpand-chart/tree/staging
+
+# Framework
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
 ## First Step
@@ -37,6 +38,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
 
 
 
