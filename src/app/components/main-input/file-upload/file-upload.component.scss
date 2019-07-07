@@ -1,0 +1,50 @@
+.file-input-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .custom-file-upload {
+        display: inline-block;
+        cursor: pointer;
+        color: #4a69bd;
+        border: 2px solid #4a69bd;
+        border-radius: 5px;
+        min-width: 9rem;
+        background-color: transparent;
+        padding: .5rem;
+        transition: all 0.2s ease-in-out;
+
+        .upload-icon {
+            color: #4a69bd;
+            transition: color 0.2s ease-in-out;
+        }
+
+        &:hover {
+            background-color: #4a69bd;
+            color: #fefefe;
+
+            .upload-icon {
+                color: #fefefe;
+            }
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+    }
+
+    .upload-button {
+        padding: .2rem;
+        background-color: transparent;
+        border: none;
+
+        &--icon {
+            color: #4a69bd;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                color: darken($color: #4a69bd, $amount: 5);
+            }
+        }
+    }
+}

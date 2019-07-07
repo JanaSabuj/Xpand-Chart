@@ -1,0 +1,9 @@
+<div #scatterplot id="scatterplot" class="scatter-plot"></div>
+
+<app-chart-legend
+        [legendData]="legendData"
+        (legendHover)="updateChartHover($event)"></app-chart-legend>
+
+<app-export-chart
+        [chartName]="'scatterplot'"></app-export-chart>
+

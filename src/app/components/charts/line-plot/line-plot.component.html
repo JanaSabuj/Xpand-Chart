@@ -1,0 +1,6 @@
+<div #lineplot id="lineplot"></div>
+<app-chart-legend
+        [legendData]="legendData"
+        (legendHover)="updateChartHover($event)"></app-chart-legend>
+<app-export-chart
+        [chartName]="'lineplot'"></app-export-chart>

@@ -1,0 +1,29 @@
+<div class="chart">
+  <app-bar-chart *ngIf="currentDisplay === 'Bar Chart'"
+    [selectedData]="selectedData"
+    [offset]="offset"></app-bar-chart>
+  
+  <app-pie-chart *ngIf="currentDisplay === 'Pie Chart'"
+    [selectedData]="selectedData"></app-pie-chart>
+  
+  <app-sunburst *ngIf="currentDisplay === 'Sunburst'"
+    [selectedData]="selectedData"></app-sunburst>
+  
+  <app-bubble-chart *ngIf="currentDisplay === 'Bubble Plot'"
+    [selectedData]="selectedData"></app-bubble-chart>
+  
+  <app-scatter-plot *ngIf="currentDisplay === 'Scatter Plot'"
+    [selectedData]="selectedData"></app-scatter-plot>
+  
+  <app-line-plot *ngIf="currentDisplay === 'Line Plot'"
+    [selectedData]="selectedData"></app-line-plot>
+    
+  <app-stacked-area *ngIf="currentDisplay === 'Stacked Area Plot'"
+    [selectedData]="selectedData"></app-stacked-area>
+  
+  <app-box-plot *ngIf="currentDisplay === 'Box Plot'"
+    [selectedData]="selectedData"></app-box-plot>
+  
+  <app-violin-plot *ngIf="currentDisplay === 'Violin Plot'"
+    [selectedData]="selectedData"></app-violin-plot>
+</div>

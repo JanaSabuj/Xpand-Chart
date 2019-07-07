@@ -1,0 +1,8 @@
+<div #stackedarea id="stackedarea"></div>
+
+<app-chart-legend
+        [legendData]="legendData"
+        (legendHover)="updateChartHover($event)"></app-chart-legend>
+
+<app-export-chart
+        [chartName]="'stackedarea'"></app-export-chart>

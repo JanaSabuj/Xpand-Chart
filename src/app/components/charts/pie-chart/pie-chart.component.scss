@@ -1,0 +1,19 @@
+.tooltip{
+    background: #ecf0f1;
+    box-shadow: 0 0 5px #999999;
+    border: 0;
+    // border-radius: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    height: auto;
+    margin: 2px auto;
+    padding: 0.5rem;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    // transform: translate(-50%, -50%);
+
+}

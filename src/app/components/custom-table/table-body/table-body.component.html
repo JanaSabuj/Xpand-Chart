@@ -1,0 +1,40 @@
+<table id="x-custom-table" class="table table-sm table-striped table-dark table-hover table-bordered">
+  <thead>
+    <tr>
+      <th class="align-middle"
+          (click)="resetDataCells()"
+          style="cursor: default">ID</th>
+      <th *ngFor="let col of selectedColumns"
+          [ngClass]="{
+            'custom-table-header': true,
+            'p-2': true,
+            'header-selected': selectedColumnHead === col,
+            'align-middle': true
+          }"
+          (click)="colClicked($event, col)">
+        <span class="text-box">
+          <span class="header-text">{{ col }}</span>
+        </span>
+        <span [ngClass]="{
+                'primary-select-button': true,
+                'primary-selected': primaryColumn === col
+              }"
+              (click)="onPrimarySelect($event, col)">&nbsp;</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of displayCells; let i = index">
+      <td (click)="rowClicked($event, i)"
+          style="cursor: pointer">{{ i + 1 }}</td>
+      <td [ngClass]="{
+            'custom-table-cell': true,
+            'selected': cell.selected
+          }"
+          *ngFor="let cell of row; let j = index"
+          (click)="cellClicked($event, i, j)">
+        {{ cell.data }}
+      </td>
+    </tr>
+  </tbody>
+</table>

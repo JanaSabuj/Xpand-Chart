@@ -1,0 +1,6 @@
+<div #piechart id="piechart" class="piechart"></div>
+<app-chart-legend
+        [legendData]="legendData"
+        (legendHover)="updateChartHover($event)"></app-chart-legend>
+<app-export-chart
+        [chartName]="'piechart'"></app-export-chart>

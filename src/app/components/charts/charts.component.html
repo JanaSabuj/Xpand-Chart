@@ -1,0 +1,13 @@
+<section class="charts">
+  <app-chart-selector
+    [chartsList]="chartsList"
+    [possibleCharts]="possibleCharts"
+    (chartSelectedEvent)="onChartSelect($event)"></app-chart-selector>
+
+  <div class="chart-container">
+    <app-chart
+      [selectedData]="selectedData"
+      [currentDisplay]="currentDisplay"
+      [offset]="offset"></app-chart>
+  </div>
+</section>

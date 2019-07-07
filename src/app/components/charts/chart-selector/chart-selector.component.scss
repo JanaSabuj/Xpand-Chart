@@ -1,0 +1,37 @@
+.chart-selector {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    .chartlist {
+        background-color: #fefefe;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        li {
+            cursor: pointer;
+        }
+    }
+
+    .btn-custom {
+        background-color: #4a69bd;
+        color: white;
+    }
+    
+    .btn-custom2 {
+        background-color: #2d98da;
+        color: white;
+    }
+}
+
+.shadow {
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2),
+                0 6px 8px 0 rgba(0, 0, 0, 0.14),
+                0 1px 12px 0 rgba(0, 0, 0, 0.12);
+}

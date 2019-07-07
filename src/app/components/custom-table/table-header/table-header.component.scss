@@ -1,0 +1,56 @@
+.thead-dark {
+    margin: 0 !important;
+    height: 100%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+
+    .custom-table-header {
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: #333;
+        border: 1px solid black;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 200;
+        color: #fefefe;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        transition: background-color 0.2s ease-in-out;
+        cursor: default;
+        position: relative;
+
+        &:hover {
+            background-color: #454545;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+
+        .text-box {
+            display: inline;
+            padding: .2rem;
+        }
+
+        .btn-del {
+            color: white;
+            cursor: pointer;
+            font-size: 1.1rem;
+
+            position: absolute;
+            top: 0%;
+            right: 1%;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

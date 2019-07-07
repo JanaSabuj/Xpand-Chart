@@ -1,0 +1,44 @@
+<section class="column-selector container-fluid mb-3 p-3">
+  <!-- File upload -->
+  <app-file-upload 
+    (readEvent)="receiveInputData($event)"></app-file-upload>
+
+  <div class="column-container"
+    cdkDropList
+    #colSelectorList="cdkDropList"
+    [cdkDropListData]="columnHeaders"
+    [cdkDropListConnectedTo]="[tableColumnsList]"
+    (cdkDropListDropped)="onDrop($event)">
+
+    <p class="mx-auto my-auto" *ngIf="!isDataLoaded">Columns read from your file will be displayed here</p>
+    
+    <ul class="input-columns">
+      <li *ngFor="let header of columnHeaders" 
+          class="btn-col-custom mx-1"
+          [cdkDragData]="header"
+          cdkDrag>
+          <span class="text-box">{{ header }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <div [ngClass]="{
+      'custom-drop-zone': true,
+      'p-4': isEmpty,
+      'mt-2': true
+    }"
+    cdkDropList
+    #tableColumnsList="cdkDropList"
+    [cdkDropListData]="selectedColumns"
+    [cdkDropListConnectedTo]="[colSelectorList]"
+    (cdkDropListDropped)="onDrop($event)">
+
+    <p class="mx-auto my-auto" *ngIf="isEmpty">Drag and drop columns here</p>
+    
+    <!-- Table headers -->
+    <app-table-header
+      (deleteColumnEvent)="onColumnDelete($event)"
+
+      [columnHeaders]="selectedColumns"></app-table-header>
+  </div>
+</section>

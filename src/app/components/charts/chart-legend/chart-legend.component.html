@@ -1,0 +1,14 @@
+<div [ngClass]="{
+    'legend-container': true,
+    'shadow': legendData.length > 20
+}">
+    <ul class="legend-list">
+        <li *ngFor="let obj of legendData"
+            class="legend-item"
+            (mouseover)="mouseOver($event, obj)"
+            (mouseleave)="mouseLeave($event)">
+            <span  [style.backgroundColor]="obj.color" ></span>
+            {{ obj.name }}
+        </li>
+    </ul>        
+</div>

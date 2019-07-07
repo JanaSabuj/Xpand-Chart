@@ -1,0 +1,6 @@
+<div #sunburst id="sunburst" class="sunburst"></div>
+<app-chart-legend
+        [legendData]="legendData"
+        (legendHover)="updateChartHover($event)"></app-chart-legend>
+<app-export-chart
+        [chartName]="'sunburst'"></app-export-chart>

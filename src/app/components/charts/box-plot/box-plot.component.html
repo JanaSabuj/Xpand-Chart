@@ -1,0 +1,8 @@
+<div #boxplot id="boxplot"></div>
+
+<app-chart-legend
+    [legendData]="legendData"
+    (legendHover)="updateChartHover($event)"></app-chart-legend>
+
+<app-export-chart
+    [chartName]="'boxplot'"></app-export-chart>

@@ -1,0 +1,45 @@
+<main style="text-align: center; position: relative;">
+  <app-navbar
+    (modalOpenEvent)="toggleModal($event)"
+    (chartInfoOpenEvent)="toggleChartInfo($event)"></app-navbar>
+
+  <app-how-to-use *ngIf="showModal"
+    (closeModalEvent)="toggleModal($event)"></app-how-to-use>
+
+  <app-chart-info *ngIf="showChartInfo"
+    (chartClosedEvent)="toggleChartInfo($event)"></app-chart-info>
+  
+  <!-- Main App -->
+  <div class="container-fluid">
+    <div class="row align-items-start">
+      <div id="main-input" class="main-input">
+        <app-main-input
+          (readDataEvent)="receiveData($event)"
+          (readHeaders)="receiveHeaders($event)"
+          (readColumns)="receiveColumns($event)"
+          (dataSelectedEvent)="receiveSelectedData($event)"
+
+          [inputData]="inputData"
+          [headers]="headers"
+          [isDataLoaded]="isDataLoaded"></app-main-input>
+      </div>
+      <div id="section-divider" class="section-divider">
+        <fa-icon class="left-arrow"
+        [icon]="faAngleDoubleLeft"
+        (click)="closeDrawer()"
+        *ngIf="!isFullScreen"></fa-icon>
+        <fa-icon class="right-arrow"
+                [icon]="faAngleDoubleRight"
+                (click)="openDrawer()"
+                *ngIf="isFullScreen"></fa-icon>
+      </div>
+      <div id="data-visualiser" class="data-visualiser">
+        <app-charts
+          [selectedData]="selectedData"
+          [offset]="offset"></app-charts>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</main>

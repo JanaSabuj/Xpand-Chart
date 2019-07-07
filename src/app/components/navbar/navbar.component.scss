@@ -1,0 +1,25 @@
+.nav-bg-custom {
+    background-image: linear-gradient(to bottom, #4a69bd, rgb(57, 127, 231));
+
+    .nav-links {
+        float: right;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .nav-link {
+            cursor: pointer;
+            background-color: transparent;
+            padding: .5rem;color: #fefefe;
+            font-weight: 300;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: rgba(254, 254, 254, 0.25);
+            }
+        }
+    }
+}

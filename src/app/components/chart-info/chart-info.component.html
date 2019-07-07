@@ -1,0 +1,274 @@
+<section class="chart-info">
+  <div class="backdrop" (click)="closeChart()">
+  </div>
+  <div class="modal-content">
+    <span class="del-btn" (click)="closeChart()">&times;</span>
+    <div class="modal-head mb-2">
+      <h1 class="title-text">Chart Info</h1>
+    </div>
+    <div class="modal-body">
+      <ul class="charts-info-list">
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Bar Chart</h3>
+            <p style="font-weight: bold">
+              A bar chart shows the relationship between a numeric and a categoric variable.
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - String or Numeric
+              </li>
+              <li>
+                Selected rows - Numeric
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Multiple Rows or Multiple Columns Plot 
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img class="rounded" src="../../../assets/img/bar.gif" alt="bar chart">
+          </div>
+        </li>
+        <hr>
+        <!-- End of one component -->
+
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Pie Chart</h3>
+            <p style="font-weight: bold">
+              A pie chart is a circle divided into sectors that each represent a proportion of the whole. It is often used to show proportion, where the sum of the sectors equal 100%.
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - String or Numeric
+              </li>
+              <li>
+                Selected rows - Numeric 
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Single Row or Single Column Plot
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/pie.gif" alt="pie chart">
+          </div>
+        </li>
+        <hr>
+        <!-- End of one component -->
+
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Sunburst</h3>
+            <p style="font-weight: bold">
+              A sunburst diagram displays a hierarchical structure. The origin of the organization is represented by the center of the circle, and each level of the organization by an aditional ring. The last level (leaves) are located at the extreme outer part of the circle.
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - String or Numeric
+              </li>
+              <li>
+                Selected rows - Numeric 
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Multiple Rows or Multiple Columns Plot
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/sunburst.gif" alt="sunburst">
+          </div>
+        </li>
+        <hr>
+        <!-- End of one component -->
+
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Scatter Plot</h3>
+            <p style="font-weight: bold">
+              A scatterplot displays the relationship between 2 numeric variables. For each data point, the value of its first variable is represented on the X axis, the second on the Y axis
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - String or Numeric Grouped Data
+              </li>
+              <li>
+                Selected rows - Numeric 
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Two Column plot
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/scatter.gif" alt="scatter">
+          </div>
+        </li>
+        <hr>
+        <!-- End of one component -->
+
+          <!-- Single chart info -->
+          <li class="charts-info-list--item row">
+            <div class="col-6 px-4">
+              <h3>Line Plot</h3>
+              <p style="font-weight: bold">
+                A line chart or line graph displays the evolution of one or several numeric variables. Data points are connected by straight line segments. It is similar to a scatter plot except that the measurement points are ordered (typically by their x-axis value) and joined with straight line segments.
+              </p>
+              <ul class="chart-specs">
+                <li>
+                  Primary column - Numeric Ordered Data
+                </li>
+                <li>
+                  Selected rows - Numeric 
+                </li>
+                <li>
+                  Selected columns - Numeric
+                </li>
+                <li>
+                  Multiple Column plot
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+              <img src="../../../assets/img/line.gif" alt="line chart">
+            </div>
+          </li>
+          <hr>
+          <!-- End of one component -->
+
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Bubble Plot</h3>
+            <p style="font-weight: bold">
+              A bubble plot is a scatterplot where a third dimension is added: the value of an additional numeric variable is represented through the size of the dots.
+              You need 3 numerical variables as input: one is represented by the X axis, one by the Y axis, and one by the dot size.
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - String or Numeric Grouped Data
+              </li>
+              <li>
+                Selected rows - Numeric 
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Three Column plot
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/bubble.gif" alt="bubble chart">
+          </div>
+        </li>
+        <hr>
+        <!-- End of one component -->
+
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Stacked Area Plot</h3>
+            <p style="font-weight: bold">
+              A stacked area chart is the extension of a basic area chart which displays the evolution of the value of several groups on the same graphic. The values of each group are displayed on top of each other, what allows to check on the same figure the evolution of both the total of a numeric variable, and the importance of each group.
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - Numeric Ordered Data
+              </li>
+              <li>
+                Selected rows - Numeric 
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Multiple Column plot
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/stacked.gif" alt="stacked area plot">
+          </div>
+        </li>
+        <hr>
+        <!-- End of one component -->
+
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Box Plot</h3>
+            <p style="font-weight: bold">
+              A boxplot gives a nice summary of one or several numeric variables. The line that divides the box into 2 parts represents the median of the data. The end of the box shows the upper and lower quartiles. The extreme lines show the highest and lowest value excluding outliers.
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - String or Numeric Grouped Data
+              </li>
+              <li>
+                Selected rows - Numeric 
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Single Column plot
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/box.gif" alt="box plot">
+          </div>
+        </li>
+        <hr>
+        <!-- End of one component -->
+
+        <!-- Single chart info -->
+        <li class="charts-info-list--item row">
+          <div class="col-6 px-4">
+            <h3>Violin Plot</h3>
+            <p style="font-weight: bold">
+              Violinplots allow to visualize the distribution of a numeric variable for one or several groups. It is really close from a boxplot, but allows a deeper understanding of the distribution. 
+            </p>
+            <ul class="chart-specs">
+              <li>
+                Primary column - String or Numeric Grouped Data
+              </li>
+              <li>
+                Selected rows - Numeric 
+              </li>
+              <li>
+                Selected columns - Numeric
+              </li>
+              <li>
+                Single Column plot
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/violin.gif" alt="violin plot">
+          </div>
+        </li>
+        <!-- End of one component -->
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+<div #bubblechart id="bubblechart"></div>
+
+<app-chart-legend
+        [legendData]="legendData"
+        (legendHover)="updateChartHover($event)"></app-chart-legend>
+
+<app-export-chart
+        [chartName]="'bubblechart'"></app-export-chart>

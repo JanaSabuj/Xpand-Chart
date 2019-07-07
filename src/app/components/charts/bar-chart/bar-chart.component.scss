@@ -1,0 +1,22 @@
+.barchart {
+    .axis--x path {
+        // display:  none;
+        color: #e67e22;
+        // size: 0.5rem;
+    }
+
+    .axis--y {
+        color: #34495e;
+    }
+
+    .tick {
+        
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+}
+ 
+
+
+

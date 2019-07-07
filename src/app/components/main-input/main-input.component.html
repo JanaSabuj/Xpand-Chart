@@ -1,0 +1,18 @@
+<section class="main-input p-2">
+  <!-- Column Selector -->
+  <app-column-selector 
+    [columnHeaders]="headers"
+    [columnData]="columns"
+    [isDataLoaded]="isDataLoaded"
+
+    (selectedColumnsUpdate)="updateSelectedColumns($event)"
+    (readDataEvent)="receiveInputData($event)">
+    </app-column-selector>
+
+  <!-- Custom Table -->
+  <app-custom-table
+    [selectedColumnsList]="selectedColumns"
+    [columnsList]="columns"
+    
+    (dataSelectedEvent)="receiveSelectedData($event)"></app-custom-table>
+</section>

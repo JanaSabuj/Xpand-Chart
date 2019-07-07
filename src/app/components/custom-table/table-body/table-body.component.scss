@@ -1,0 +1,66 @@
+.table {
+    .custom-table-header {
+        cursor: pointer;
+        position: relative;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+            background-color: lighten($color: #343a40, $amount: 3.5);
+        }
+
+        .text-box {
+            display: inline-block;
+            padding: .25rem .5rem;
+            backface-visibility: hidden;
+            text-transform: uppercase;
+            text-align: center;
+
+            .header-text {
+                color: #fefefe;
+                font-size: 0.95rem;
+                font-weight: 200;
+                cursor: pointer;
+                transition: color 0.15s ease-in-out;
+    
+                &:hover {
+                    color: #cbcbcb;
+                }
+            }
+        }
+
+        .primary-select-button {
+            display: inline-block;
+            position: absolute;
+            top: 44%;
+            right: 2.5%;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 50%;
+            background-color: #ababab;
+
+            &:hover {
+                background-color: darken(turquoise, 20);
+                cursor: pointer;
+            }
+        }
+
+        .primary-selected {
+            background-color: turquoise !important;
+        }
+    }
+
+    .custom-table-cell {
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+}
+
+.header-selected {
+    border: 2px dashed rgba($color: rgb(57, 127, 231), $alpha: 0.8) !important;
+}
+
+.selected {
+    background-color: rgba($color: rgb(0, 217, 255), $alpha: 0.5);
+    color: #fefefe;
+}

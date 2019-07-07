@@ -1,0 +1,15 @@
+<div id="chart-selector" class="container-fluid chart-selector">
+  <ul class="chartlist p-2 shadow">
+    <li *ngFor="let chart of selectableCharts"
+        (click)="chartClicked(chart.chartName, chart.disabled)"
+        [ngClass]="{
+          'btn': true,
+          'btn-custom': buttonClicked !== chart.chartName,
+          'btn-custom2': buttonClicked === chart.chartName,
+          'm-2': true,
+          'disabled': chart.disabled
+        }">
+        {{ chart.chartName }}
+    </li>
+  </ul>
+</div>

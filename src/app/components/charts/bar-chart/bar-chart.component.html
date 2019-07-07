@@ -1,0 +1,8 @@
+<div #barchart id="barchart" class="barchart" ></div>
+
+<app-chart-legend
+        [legendData]="legendData"
+        (legendHover)="updateChartHover($event)"></app-chart-legend>
+
+<app-export-chart
+        [chartName]="'barchart'"></app-export-chart>

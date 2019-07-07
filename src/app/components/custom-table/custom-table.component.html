@@ -1,0 +1,45 @@
+<section class="custom-table-container shadow">
+    <p *ngIf="isEmpty" class="empty-message mx-auto my-auto">No rows to show</p>
+    <div *ngIf="!isEmpty" class="options p-2 d-flex justify-content-end">
+        <div class="btn-group sort-buttons mr-2">
+            <button type="button" class="btn btn-dark">Sort</button>
+            <button type="button"
+                    class="btn btn-outline-dark"
+                    (click)="sortDropdownClicked('des')">
+                    &#8659;
+            </button>
+            <button type="button"
+                    class="btn btn-outline-dark"
+                    (click)="sortDropdownClicked('asc')">
+                    &#8657;
+            </button>
+            <button type="button"
+                    class="btn btn-outline-dark"
+                    (click)="sortDropdownClicked('reset')">
+                    &#8634;
+            </button>
+        </div>
+        <!-- <div class="input-group filter-group">
+            <input type="text" class="form-control" placeholder="" 
+                aria-label="Filter" aria-describedby="button-addon2"
+                [value]="filterQuery"
+                (change)="onFilterQueryChange($event)">
+            <div class="input-group-append">
+                <button id="button-addon2"
+                        class="btn btn-outline-dark" 
+                        type="submit"
+                        (click)="filterButtonClicked($event)">
+                    <span class="search-symbol">Filter &#10548;</span>
+                </button>
+            </div>
+        </div> -->
+    </div>
+    <div *ngIf="!isEmpty" class="custom-table">
+        <app-table-body
+            [tableCells]="tableCells"
+            [selectedColumns]="selectedColumnsList"
+
+            (dataSelectionEvent)="receiveSelectedData($event)"
+            (headerSelectionEvent)="receiveHeaderSelectionData($event)"></app-table-body>
+    </div>            
+</section>

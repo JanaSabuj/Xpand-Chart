@@ -1,0 +1,8 @@
+<ul class="thead-dark d-flex">
+  <li *ngFor="let col of columnHeaders"
+      class="custom-table-header">
+      <span class="text-box">{{ col }}</span>
+      <span class="btn-del"
+            (click)="deleteButtonClicked($event, col)">&times;</span>
+  </li>
+</ul>

@@ -1,0 +1,22 @@
+<div class="file-input-wrapper my-1 p-1 clearfix">
+  <!-- <input type="file" id="fileUpload" 
+        class="file-upload-button"
+        (change)="fileUploadChange($event)"/>
+  <input type="button" class="btn btn-custom ml-2" id="upload"
+          value="Upload File &#8599;"
+          (click)="handleFile($event)"/>
+  <div *ngIf="loading" class="spinner-grow text-primary align-middle ml-2" role="status">
+    <span class="sr-only">Loading...</span>
+  </div> -->
+  <label for="fileUpload" class="custom-file-upload">
+    {{ uploadButtonInfo }}&nbsp;
+    <fa-icon [icon]="faFileUpload" class="upload-icon"></fa-icon>
+    <input id="fileUpload" type="file" name="fileUpload" (change)="fileUploadChange($event)">
+  </label>
+  <div *ngIf="loading" class="spinner-grow text-primary align-middle ml-2" role="status">
+    <span class="sr-only">Loading...</span>
+  </div> 
+  <!-- <button class="upload-button ml-2" (click)="handleFile($event)">
+    <fa-icon [icon]="faArrowCircleUp" class="upload-button--icon fa-2x"></fa-icon>
+  </button> -->
+</div>
