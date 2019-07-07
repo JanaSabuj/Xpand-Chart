@@ -1,3 +1,7 @@
+![Xelpmoc](https://www.ipocentral.in/wp-content/uploads/2019/01/Xelpmoc-IPO.jpg)
+
+***
+
 # Xpand-Chart
 The Data Visualizer built during my internship at Xelpmoc Design and Tech using Angular and D3.js
 
